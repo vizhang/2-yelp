@@ -1,34 +1,18 @@
-### Basic Yelp client
+# 2-yelp
 
-This is a headless example of how to implement an OAuth 1.0a Yelp API client. The Yelp API provides an application token that allows applications to make unauthenticated requests to their search API.
+##Assignment 2, Yelp
+![alt tag]()
 
-### Next steps
+**Hours taken: 6-7**
+**Milestones Completed**
+[done] Table rows should be dynamic height according to the content height.
+[done] Custom cells should have the proper Auto Layout constraints.
+[implemented but couldn't figure out connections] Search bar should be in the navigation bar (doesn't have to expand to show location like the real Yelp app does).
 
-- Check out `BusinessesViewController.swift` to see how to use the `Business` model.
+[done] The filters you should actually have are: category, sort (best match, distance, highest rated), radius (meters), deals (on/off).
+[done] The filters table should be organized into sections as in the mock.
+[done] You can use the default UISwitch for on/off states. Optional: implement a custom switch
 
-### Sample request
-
-**Basic search with query**
-
-```
-Business.searchWithTerm("Thai", completion: { (businesses: [Business]!, error: NSError!) -> Void in
-    self.businesses = businesses
-    
-    for business in businesses {
-        println(business.name!)
-        println(business.address!)
-    }
-})
-```
-
-**Advanced search with categories, sort, and deal filters**
-
-```
-Business.searchWithTerm("Restaurants", sort: .Distance, categories: ["asianfusion", "burgers"], deals: true) { (businesses: [Business]!, error: NSError!) -> Void in
-
-    for business in businesses {
-        println(business.name!)
-        println(business.address!)
-    }
-}
-```
+**Milestones Not Completed**
+[partial] Clicking on the "Search" button should dismiss the filters page and trigger the search w/ the new filter settings
+ - this works for restaurant options, but did not have time to fully connect the other filter options
