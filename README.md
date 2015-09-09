@@ -1,7 +1,7 @@
 # 2-yelp
 
 ##Assignment 2, Yelp
-![alt tag]()
+![alt tag](https://github.com/vizhang/2-yelp/blob/master/2-yelp.gif)
 
 **Hours taken: 6-7**
 **Milestones Completed**
